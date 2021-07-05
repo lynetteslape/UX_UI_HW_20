@@ -13,17 +13,24 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
-body{
-  padding: 20px;
-  position: relative;
-}
-  
-   div.col-sm-9 div {
+body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-sm-9 div {
     height: 250px;
     font-size: 28px;
   }
-    
-     @media screen and (max-width: 810px) {
+  #section1 {color: #fff; background-color: #1E88E5;}
+  #section2 {color: #fff; background-color: #673ab7;}
+  #section3 {color: #fff; background-color: #ff9800;}
+  #section41 {color: #fff; background-color: #00bcd4;}
+  #section42 {color: #fff; background-color: #009688;}
+  
+  @media screen and (max-width: 810px) {
     #section1, #section2, #section3, #section41, #section42  {
       margin-left: 150px;
     }
@@ -35,6 +42,9 @@ body{
   <div class="row">
     <nav class="col-sm-3" id="myScrollspy">
       <ul class="nav nav-pills nav-stacked">
+           <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu"> 
             <li><a href="#section1">Hompage Design</a></li>
             <li><a href="#section2">What I did</a></li>  
                <li><a href="#section3">The Process</a></li>
